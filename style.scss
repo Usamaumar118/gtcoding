@@ -8,6 +8,7 @@
     --c-grey: #202125;
     --c-red: #F02526;
     --c-pink: #F783AE;
+    --c-mobile-nav: #2D3436;
 
     //FONTS
     --f-roboto: 'Roboto', sans-serif;;
@@ -50,6 +51,10 @@ img{
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: 1100px){
+        font-size: 60%;
+    }
 }
 
 
@@ -59,7 +64,7 @@ html{
     justify-content: space-between;
     background-color: var(--c-grey);
     position: fixed;
-    z-index: 2;
+    z-index: 2522;
     width: 100%;
     
     &__logo{
@@ -79,18 +84,72 @@ html{
 }
 
 .nav{
-
+    @media only screen and (max-width: 850px){
+        opacity: 0;
+        visibility: hidden;
+        position: absolute; 
+        top: 100%;
+        width: 100%;
+        padding: 1rem 0 2rem;
+        background: var(--c-mobile-nav);
+    }
     &__icon{
         display: none;
+
+        @media only screen and (max-width: 850px){
+            display: block;
+            margin-right: 5%;
+
+            & i {
+                font-size: 2.4rem;
+                color: var(--c-white)
+            }
+        }
     }
     
     &__search{
-        display: none;
+        position: absolute;
+        top: 100%;
+        font-size: 2rem;
+        width: 40%;
+        right: -40%;
+        font-family: var(--f-roboto-con);
+        padding: 1rem;
+        transition: all .2s ease-in;
+
+        &--visible {
+            right: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        //for Mobile
+        @media only screen and (max-width: 850px){
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            position: static;
+            text-align: center;
+            width: 80%;
+            transform: translateY(0);
+            margin: 0 auto;
+        }
+
+    }
+
+    &__visible{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .2s ease-in,
+        visibility .2s ease-in;
     }
 
     &__list{
         display: flex;
-        
+        @media only screen and (max-width: 850px){
+            display: block;
+            text-align: center;
+        }
         &__item{
             font-family: var(--f-roboto-con);
             font-size: 2rem;
@@ -99,8 +158,17 @@ html{
             color: var(--c-white);
             transition: color .2s ease-in;
 
+            @media only screen and (max-width: 850px){
+                width: 80%;
+                margin: 0 auto;
+                padding: 1rem 0;
+            }
+
             &--last{
                 margin-right: 5rem;
+                @media only screen and (max-width: 850px){
+                    display: none;
+                }
             }
             &:active{
                 color: var(--c-pink);
@@ -215,13 +283,17 @@ html{
 .cards-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
     gap: 5rem;
-
     padding: 0 2rem;
+
+    @media only screen and (max-width: 850px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .card{
-
     &__img{
         transition: box-shadow .2s ease-in;
 
