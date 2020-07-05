@@ -55,6 +55,9 @@ html{
     @media only screen and (max-width: 1100px){
         font-size: 60%;
     }
+    @media only screen and (max-width: 850px){
+        font-size: 62.5%;
+    }
 }
 
 
@@ -72,6 +75,10 @@ html{
         background-color: var(--c-dark-grey);
         position: relative;
         height: 7.2rem;
+
+        @media only screen and (max-width: 600px){
+            padding: 0 5.8rem;
+        }
 
         & img {
             width: 10rem;
@@ -214,6 +221,14 @@ html{
             margin-bottom: 2rem;
             color: var(--c-white);
             display: block;
+
+            @media only screen and (max-width: 850px){
+                font-size: 5.2rem;
+            }
+
+            @media only screen and (max-width: 600px){
+                font-size: 4.8rem;
+            }
         }
         &__desc{
             background-color: var(--c-black);
@@ -224,6 +239,14 @@ html{
             font-size: 2.4rem;
             font-weight: 700;
             font-family: var(--f-roboto);
+
+            @media only screen and (max-width: 850px){
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: 600px){
+                font-size: 1.8rem;
+            }
         }
 
     }
@@ -254,6 +277,10 @@ html{
     &:hover{
         background-color: var(--c-red);
         padding: .3rem 4.2rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        font-size: 2.8rem;
     }
 
 }
@@ -290,10 +317,15 @@ html{
 
     @media only screen and (max-width: 850px){
         grid-template-columns: 1fr;
+        padding: 0;
     }
+
 }
 
 .card{
+    @media only screen and (max-width: 850px){
+        margin: 0 -2.5%;
+    }
     &__img{
         transition: box-shadow .2s ease-in;
 
@@ -310,7 +342,10 @@ html{
         padding: 0 .5rem;
         cursor: pointer;
         transition: text-decoration .2s ease-in;
-
+        @media only screen and (max-width: 850px){
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
         &:hover{
             text-decoration: underline;
         }   
@@ -319,6 +354,10 @@ html{
     &__para{
         margin-bottom: 1.5rem;
         padding: 0 .5rem;
+        @media only screen and (max-width: 850px){
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
     }
 
     &__btn{
@@ -342,11 +381,21 @@ html{
         margin-bottom: 1.5rem;
         text-align: center;
     }
+    &__btn{
+        @media only screen and (max-width: 600px){
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 
 .footer{
     background-color: var(--c-dark-grey);
     padding: 1rem 0;
+    @media only screen and (max-width: 850px){
+        padding-bottom: .5rem
+    }
 
     &__section-heading{
         font-family: var(--f-roboto);
@@ -360,14 +409,23 @@ html{
         width: 95%;
         max-width: 150rem;
         margin: 0 auto;
-
         display: grid;
         grid-template-columns: 40% 1fr;
 
+        @media only screen and (max-width: 850px){
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+        }
+
 
         &__nav{
-            border-right: 1px solid red;
+            border-right: 1px solid var(--c-red);
             padding: 1.5rem 0;
+
+            @media only screen and (max-width: 850px){
+                border-right: none;
+            }
 
             &__list__item{
                 color: var(--c-white);
@@ -384,12 +442,26 @@ html{
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            @media only screen and (max-width: 850px){
+                min-width: 100%;
+                background: var(--c-white);
+            }
+
+            &__heading{
+                @media only screen and (max-width: 850px){
+                    color: var(--c-black)
+                }
+            }
 
 
             &__list{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @media only screen and (max-width: 850px){
+                    margin: 2rem 0 2.5rem;
+                }
 
                 &__item{
                     margin-right: 3.2rem;
@@ -402,6 +474,9 @@ html{
                         color: var(--c-white);
                         font-size: 5rem;
                         transition: color .3s ease-in;
+                        @media only screen and (max-width: 850px){
+                            color: var(--c-black);
+                        }
 
 
                         &--fb:hover{
@@ -420,7 +495,11 @@ html{
 
             &__para{
                 color: var(--c-white);
-                font-size: 1.8rem;
+                font-weight: 100;
+                font-size: 1.6rem;
+                @media only screen and (max-width: 850px){
+                    color:var(--c-black)
+                }
             }
         }
     }

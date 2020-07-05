@@ -58,6 +58,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +85,12 @@ html {
   background-color: var(--c-dark-grey);
   position: relative;
   height: 7.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .header__logo {
+    padding: 0 5.8rem;
+  }
 }
 
 .header__logo img {
@@ -241,6 +253,18 @@ html {
   display: block;
 }
 
+@media only screen and (max-width: 850px) {
+  .hero__content__heading {
+    font-size: 5.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero__content__heading {
+    font-size: 4.8rem;
+  }
+}
+
 .hero__content__desc {
   background-color: var(--c-black);
   color: var(--c-white);
@@ -250,6 +274,18 @@ html {
   font-size: 2.4rem;
   font-weight: 700;
   font-family: var(--f-roboto);
+}
+
+@media only screen and (max-width: 850px) {
+  .hero__content__desc {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero__content__desc {
+    font-size: 1.8rem;
+  }
 }
 
 .main {
@@ -273,6 +309,12 @@ html {
 .section__heading:hover {
   background-color: var(--c-red);
   padding: .3rem 4.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section__heading {
+    font-size: 2.8rem;
+  }
 }
 
 .btn {
@@ -309,6 +351,13 @@ html {
   .cards-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .card {
+    margin: 0 -2.5%;
   }
 }
 
@@ -336,6 +385,13 @@ html {
   transition: text-decoration .2s ease-in, -webkit-text-decoration .2s ease-in;
 }
 
+@media only screen and (max-width: 850px) {
+  .card__heading {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
 .card__heading:hover {
   text-decoration: underline;
 }
@@ -343,6 +399,13 @@ html {
 .card__para {
   margin-bottom: 1.5rem;
   padding: 0 .5rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .card__para {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
 
 .card__btn {
@@ -373,9 +436,23 @@ html {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .source-code__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .footer {
   background-color: var(--c-dark-grey);
   padding: 1rem 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .footer {
+    padding-bottom: .5rem;
+  }
 }
 
 .footer__section-heading {
@@ -396,9 +473,24 @@ html {
       grid-template-columns: 40% 1fr;
 }
 
+@media only screen and (max-width: 850px) {
+  .footer__content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
 .footer__content__nav {
-  border-right: 1px solid red;
+  border-right: 1px solid var(--c-red);
   padding: 1.5rem 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .footer__content__nav {
+    border-right: none;
+  }
 }
 
 .footer__content__nav__list__item {
@@ -426,6 +518,19 @@ html {
           align-items: center;
 }
 
+@media only screen and (max-width: 850px) {
+  .footer__content__social {
+    min-width: 100%;
+    background: var(--c-white);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .footer__content__social__heading {
+    color: var(--c-black);
+  }
+}
+
 .footer__content__social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,6 +541,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .footer__content__social__list {
+    margin: 2rem 0 2.5rem;
+  }
 }
 
 .footer__content__social__list__item {
@@ -453,6 +564,12 @@ html {
   transition: color .3s ease-in;
 }
 
+@media only screen and (max-width: 850px) {
+  .footer__content__social__list__item__icon {
+    color: var(--c-black);
+  }
+}
+
 .footer__content__social__list__item__icon--fb:hover {
   color: #395693;
 }
@@ -467,6 +584,13 @@ html {
 
 .footer__content__social__para {
   color: var(--c-white);
-  font-size: 1.8rem;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .footer__content__social__para {
+    color: var(--c-black);
+  }
 }
 /*# sourceMappingURL=style.css.map */
