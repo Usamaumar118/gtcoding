@@ -261,6 +261,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2rem;
 }
 
 .source-code__heading {
@@ -271,5 +272,102 @@ html {
 .source-code__para {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.footer {
+  background-color: var(--c-dark-grey);
+  padding: 1rem 0;
+}
+
+.footer__section-heading {
+  font-family: var(--f-roboto);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--c-white);
+}
+
+.footer__content {
+  width: 95%;
+  max-width: 150rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 1fr;
+      grid-template-columns: 40% 1fr;
+}
+
+.footer__content__nav {
+  border-right: 1px solid red;
+  padding: 1.5rem 0;
+}
+
+.footer__content__nav__list__item {
+  color: var(--c-white);
+}
+
+.footer__content__nav__list__item:hover {
+  text-decoration: underline;
+}
+
+.footer__content__social {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__content__social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__content__social__list__item {
+  margin-right: 3.2rem;
+}
+
+.footer__content__social__list__item--last {
+  margin-right: 0;
+}
+
+.footer__content__social__list__item__icon {
+  color: var(--c-white);
+  font-size: 5rem;
+  -webkit-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+.footer__content__social__list__item__icon--fb:hover {
+  color: #395693;
+}
+
+.footer__content__social__list__item__icon--youtube:hover {
+  color: #F70000;
+}
+
+.footer__content__social__list__item__icon--github:hover {
+  color: #333;
+}
+
+.footer__content__social__para {
+  color: var(--c-white);
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -260,6 +260,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 
     &__heading{
         align-self: flex-start;
@@ -268,5 +269,87 @@ html{
     &__para{
         margin-bottom: 1.5rem;
         text-align: center;
+    }
+}
+
+.footer{
+    background-color: var(--c-dark-grey);
+    padding: 1rem 0;
+
+    &__section-heading{
+        font-family: var(--f-roboto);
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: var(--c-white);;
+    }
+    
+    &__content{
+        width: 95%;
+        max-width: 150rem;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 40% 1fr;
+
+
+        &__nav{
+            border-right: 1px solid red;
+            padding: 1.5rem 0;
+
+            &__list__item{
+                color: var(--c-white);
+            
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__social{
+            padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+
+            &__list{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &__item{
+                    margin-right: 3.2rem;
+
+                    &--last{
+                        margin-right: 0;
+                    }
+
+                    &__icon{
+                        color: var(--c-white);
+                        font-size: 5rem;
+                        transition: color .3s ease-in;
+
+
+                        &--fb:hover{
+                            color: #395693;
+                        }
+                        &--youtube:hover{
+                            color: #F70000;
+                        }
+                        &--github:hover{
+                            color: #333;
+                        }
+                    }
+
+                }
+            }
+
+            &__para{
+                color: var(--c-white);
+                font-size: 1.8rem;
+            }
+        }
     }
 }
