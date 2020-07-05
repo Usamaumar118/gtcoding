@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6{
 
 p, a{
     font-size: 1.6rem;
+    line-height: 1.5;
     font-weight: 400;
     font-family: var(--f-roboto);
 
@@ -163,10 +164,13 @@ html{
 }
 
 .main{
-    width: 90%;
+    width: 95%;
     max-width: 150rem;
     margin: 0 auto;
 }
+
+
+//SECTION HEADING
 
 .section__heading{
     font-size: 3.2rem;
@@ -182,6 +186,71 @@ html{
     &:hover{
         background-color: var(--c-red);
         padding: .3rem 4.2rem;
+    }
+
+}
+//BTNS
+
+.btn{
+    border: .3rem solid black;
+    padding: .5rem 2.4rem;
+    font-family: var(--f-roboto);
+    font-weight: 500;
+    transition: padding .2s ease-in,
+                background-color .2s ease-in,
+                color .2s ease-in;
+    &:hover{
+        background-color: var(--c-red);
+        padding-right: 6rem;
+        color: var(--c-white);
+    }
+
+}
+
+
+
+//card-container
+
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    padding: 0 2rem;
+}
+
+.card{
+
+    &__img{
+        transition: box-shadow .2s ease-in;
+
+        &:hover{
+        box-shadow: 0rem .5rem .5rem .2rem rgba(#111111, .4);
+        }
+    }
+    
+
+    &__heading{
+        font-size: 2rem;
+        font-family: var(--f-roboto);
+        margin: 2rem 0;
+        padding: 0 .5rem;
+        cursor: pointer;
+        transition: text-decoration .2s ease-in;
+
+        &:hover{
+            text-decoration: underline;
+        }   
+    }
+
+    &__para{
+        margin-bottom: 1.5rem;
+        padding: 0 .5rem;
+    }
+
+    &__btn{
+        margin: 0 0 2rem 2rem;
     }
 
 }

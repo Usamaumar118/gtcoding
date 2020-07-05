@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a {
   font-size: 1.6rem;
+  line-height: 1.5;
   font-weight: 400;
   font-family: var(--f-roboto);
 }
@@ -166,7 +167,7 @@ html {
 }
 
 .main {
-  width: 90%;
+  width: 95%;
   max-width: 150rem;
   margin: 0 auto;
 }
@@ -186,5 +187,66 @@ html {
 .section__heading:hover {
   background-color: var(--c-red);
   padding: .3rem 4.2rem;
+}
+
+.btn {
+  border: .3rem solid black;
+  padding: .5rem 2.4rem;
+  font-family: var(--f-roboto);
+  font-weight: 500;
+  -webkit-transition: padding .2s ease-in, background-color .2s ease-in, color .2s ease-in;
+  transition: padding .2s ease-in, background-color .2s ease-in, color .2s ease-in;
+}
+
+.btn:hover {
+  background-color: var(--c-red);
+  padding-right: 6rem;
+  color: var(--c-white);
+}
+
+.cards-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 0 2rem;
+}
+
+.card__img {
+  -webkit-transition: -webkit-box-shadow .2s ease-in;
+  transition: -webkit-box-shadow .2s ease-in;
+  transition: box-shadow .2s ease-in;
+  transition: box-shadow .2s ease-in, -webkit-box-shadow .2s ease-in;
+}
+
+.card__img:hover {
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem 0.2rem rgba(17, 17, 17, 0.4);
+          box-shadow: 0rem 0.5rem 0.5rem 0.2rem rgba(17, 17, 17, 0.4);
+}
+
+.card__heading {
+  font-size: 2rem;
+  font-family: var(--f-roboto);
+  margin: 2rem 0;
+  padding: 0 .5rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-text-decoration .2s ease-in;
+  transition: -webkit-text-decoration .2s ease-in;
+  transition: text-decoration .2s ease-in;
+  transition: text-decoration .2s ease-in, -webkit-text-decoration .2s ease-in;
+}
+
+.card__heading:hover {
+  text-decoration: underline;
+}
+
+.card__para {
+  margin-bottom: 1.5rem;
+  padding: 0 .5rem;
+}
+
+.card__btn {
+  margin: 0 0 2rem 2rem;
 }
 /*# sourceMappingURL=style.css.map */
