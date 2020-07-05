@@ -170,4 +170,21 @@ html {
   max-width: 150rem;
   margin: 0 auto;
 }
+
+.section__heading {
+  font-size: 3.2rem;
+  display: inline-block;
+  margin: 2.5rem 0;
+  border-left: 3px solid var(--c-black);
+  border-right: 3px solid var(--c-black);
+  padding: .3rem 3.2rem;
+  cursor: pointer;
+  -webkit-transition: background-color .2s ease-in, padding .3s ease-in;
+  transition: background-color .2s ease-in, padding .3s ease-in;
+}
+
+.section__heading:hover {
+  background-color: var(--c-red);
+  padding: .3rem 4.2rem;
+}
 /*# sourceMappingURL=style.css.map */
