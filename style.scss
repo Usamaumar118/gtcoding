@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;400&family=Roboto:wght@300;400;500;700&display=swap');
+
 :root{
     //COLORS
     --c-black: #000000;
@@ -50,4 +51,62 @@ html{
     font-size: 62.5%;
 }
 
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--c-grey);
+    
+    &__logo{
+        padding: 0 11.2rem;
+        background-color: var(--c-dark-grey);
+        position: relative;
+        height: 7.2rem;
+
+        & img {
+            width: 10rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.nav{
+
+    &__icon{
+        display: none;
+    }
+    
+    &__search{
+        display: none;
+    }
+
+    &__list{
+        display: flex;
+        
+        &__item{
+            font-family: var(--f-roboto-con);
+            font-size: 2rem;
+            font-weight: 500;
+            margin-right: 6.2rem;
+            color: var(--c-white);
+            transition: color .2s ease-in;
+
+            &--last{
+                margin-right: 5rem;
+            }
+            &:active{
+                color: var(--c-pink);
+            }
+            &:hover{
+                color: var(--c-red);
+            }
+        }
+    }
+
+
+}
 
