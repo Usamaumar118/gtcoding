@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap");
 :root {
   --c-black: #000000;
   --c-white: #ffffff;
@@ -39,6 +39,7 @@ a {
   text-decoration: none;
   color: var(--c-black);
   display: inline-block;
+  cursor: pointer;
 }
 
 img {
@@ -294,6 +295,10 @@ html {
   margin: 0 auto;
 }
 
+.main--pd-top {
+  padding-top: 10rem;
+}
+
 .section__heading {
   font-size: 3.2rem;
   display: inline-block;
@@ -321,7 +326,7 @@ html {
   border: .3rem solid black;
   padding: .5rem 2.4rem;
   font-family: var(--f-roboto);
-  font-weight: 500;
+  font-weight: 700;
   -webkit-transition: padding .2s ease-in, background-color .2s ease-in, color .2s ease-in;
   transition: padding .2s ease-in, background-color .2s ease-in, color .2s ease-in;
 }
@@ -396,6 +401,22 @@ html {
   text-decoration: underline;
 }
 
+.card__meta {
+  font-family: var(--f-roboto-slab);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: -1.5rem 0 1rem .5rem;
+}
+
+.card__meta__author, .card__meta__category {
+  font-family: var(--f-roboto-slab);
+  font-size: 1.4rem;
+}
+
+.card__meta__author:hover, .card__meta__category:hover {
+  text-decoration: underline;
+}
+
 .card__para {
   margin-bottom: 1.5rem;
   padding: 0 .5rem;
@@ -410,6 +431,33 @@ html {
 
 .card__btn {
   margin: 0 0 2rem 2rem;
+}
+
+.pagination {
+  margin: 2rem 0;
+}
+
+.pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination__list__item {
+  padding: .5rem 2rem;
+  font-family: var(--f-roboto);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-top: 4px solid transparent;
+  -webkit-transition: border .2s ease-out;
+  transition: border .2s ease-out;
+}
+
+.pagination__list__item:hover {
+  border-top: 4px solid var(--c-black);
 }
 
 .source-code {

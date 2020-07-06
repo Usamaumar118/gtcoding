@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root{
     //COLORS
@@ -42,6 +42,7 @@ a{
     text-decoration: none;
     color: var(--c-black);
     display: inline-block;
+    cursor: pointer;
 }
 img{
     max-width: 100%;
@@ -258,6 +259,10 @@ html{
     width: 95%;
     max-width: 150rem;
     margin: 0 auto;
+
+    &--pd-top{
+        padding-top: 10rem;
+    }
 }
 
 
@@ -290,7 +295,7 @@ html{
     border: .3rem solid black;
     padding: .5rem 2.4rem;
     font-family: var(--f-roboto);
-    font-weight: 500;
+    font-weight: 700;
     transition: padding .2s ease-in,
                 background-color .2s ease-in,
                 color .2s ease-in;
@@ -351,6 +356,24 @@ html{
         }   
     }
 
+    &__meta{
+        font-family: var(--f-roboto-slab);
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin: -1.5rem 0 1rem .5rem;
+
+        &__author,
+        &__category{
+            font-family: var(--f-roboto-slab);
+            font-size: 1.4rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
     &__para{
         margin-bottom: 1.5rem;
         padding: 0 .5rem;
@@ -364,6 +387,28 @@ html{
         margin: 0 0 2rem 2rem;
     }
 
+}
+
+.pagination{
+    margin: 2rem 0;
+    
+    &__list{
+        display: flex;
+        justify-content: center;
+
+        &__item{
+            padding: .5rem 2rem;
+            font-family: var(--f-roboto);
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-top: 4px solid transparent;
+            transition: border .2s ease-out;
+
+            &:hover{
+                border-top: 4px solid var(--c-black);
+            }
+        }
+    }
 }
 
 
@@ -504,3 +549,7 @@ html{
         }
     }
 }
+
+
+///////CSS FOR BLOG PAGE ONLY
+
