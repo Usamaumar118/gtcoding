@@ -288,6 +288,11 @@ html{
         font-size: 2.8rem;
     }
 
+    &--comments{
+        font-size: 2.8rem;
+        margin-left: .5rem;
+    }
+
 }
 //BTNS
 
@@ -339,6 +344,8 @@ html{
 }
 
 .card{
+
+
     @media only screen and (max-width: 850px){
         margin: 0 -2.5%;
     }
@@ -348,6 +355,10 @@ html{
         &:hover{
         box-shadow: 0rem .5rem .5rem .2rem rgba(#111111, .4);
         }
+    }
+
+    &--blogpost{
+        border-left: 1px solid var(--c-dark-grey);
     }
     
 
@@ -446,7 +457,13 @@ html{
 }
 
 .comments{
-    margin-top: 1px solid red;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid var(--c-dark-grey);
+
+    @media only screen and (max-width: 850px){
+        margin-left: -2.5%;
+        margin-right: -2.5%;
+    }
 }
 
 .source-code{   
