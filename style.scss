@@ -320,6 +320,17 @@ html{
     gap: 5rem;
     padding: 0 2rem;
 
+    &--blogpost{
+        grid-template-columns: 70% 1fr;
+        grid-template-rows: repeat(2, max-content);
+        gap: 0 2rem;
+
+        @media only screen and (max-width: 850px){
+            grid-template-columns:  1fr;
+        }
+    }
+
+
     @media only screen and (max-width: 850px){
         grid-template-columns: 1fr;
         padding: 0;
@@ -347,6 +358,7 @@ html{
         padding: 0 .5rem;
         cursor: pointer;
         transition: text-decoration .2s ease-in;
+
         @media only screen and (max-width: 850px){
             margin-left: 2.5%;
             margin-right: 2.5%;
@@ -354,6 +366,15 @@ html{
         &:hover{
             text-decoration: underline;
         }   
+        
+        &--blogpost{
+            //needs to be fixed with arrow
+            cursor: pointer;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
     }
 
     &__meta{
@@ -411,6 +432,22 @@ html{
     }
 }
 
+
+.sidebar{
+    align-self: stretch;
+    background-color: var(--c-grey);
+    color: #fff;
+    grid-column: 2 / 3;
+    grid-row: -3 / -1;
+
+    @media only screen and (max-width: 850px){
+        display: none;
+    }
+}
+
+.comments{
+    margin-top: 1px solid red;
+}
 
 .source-code{   
     display: flex;
