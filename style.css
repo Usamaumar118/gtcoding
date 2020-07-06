@@ -441,6 +441,11 @@ html {
   margin: -1.5rem 0 1rem .5rem;
 }
 
+.card__meta--blogpost {
+  margin: 0;
+  padding: 1rem;
+}
+
 .card__meta__author, .card__meta__category {
   font-family: var(--f-roboto-slab);
   font-size: 1.4rem;

@@ -394,6 +394,12 @@ html{
         font-weight: 400;
         margin: -1.5rem 0 1rem .5rem;
 
+        &--blogpost{
+            margin: 0;
+            padding: 1rem;
+            
+        }
+
         &__author,
         &__category{
             font-family: var(--f-roboto-slab);
