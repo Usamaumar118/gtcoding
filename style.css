@@ -441,6 +441,12 @@ html {
   margin: -1.5rem 0 1rem .5rem;
 }
 
+@media only screen and (max-width: 850px) {
+  .card__meta {
+    margin-left: 2rem;
+  }
+}
+
 .card__meta--blogpost {
   margin: 0;
   padding: 1rem;
