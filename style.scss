@@ -126,6 +126,7 @@ html{
         transition: all .2s ease-in;
 
         &--visible {
+            transform: scale(1);
             right: 0;
             visibility: visible;
             opacity: 1;
@@ -135,6 +136,7 @@ html{
         @media only screen and (max-width: 850px){
             display: block;
             visibility: visible;
+            transform: scale(0);
             opacity: 1;
             position: static;
             text-align: center;

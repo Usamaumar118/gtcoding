@@ -143,6 +143,8 @@ html {
 }
 
 .nav__search--visible {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   right: 0;
   visibility: visible;
   opacity: 1;
@@ -152,6 +154,8 @@ html {
   .nav__search {
     display: block;
     visibility: visible;
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 1;
     position: static;
     text-align: center;
